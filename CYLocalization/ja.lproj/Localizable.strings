@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CYLocalization
+
+  Created by 百事&可乐 on 2019/7/4.
+  Copyright © 2019 百事&可乐. All rights reserved.
+*/
+"national_flag" = "日本.png" ;
+"country_name" = "国家の名前:日本" ;
+"force_language" = "デフォルトの言語:こんにちは、世界!" ;

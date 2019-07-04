@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CYLocalization
+
+  Created by 百事&可乐 on 2019/7/4.
+  Copyright © 2019 百事&可乐. All rights reserved.
+*/
+"national_flag" = "中国.png" ;
+"country_name" = "国家名:中国" ;
+"force_language" = "默认地语言:你好 世界!" ;

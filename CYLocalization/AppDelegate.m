@@ -17,6 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSArray *languages = [NSLocale preferredLanguages];
+    
+    NSString *language = [languages objectAtIndex:0];//第一个就是系统当前的语言
+    
+    if ([language hasPrefix:@"zh"]) {//检测开头匹配，是否为中文
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];//App语言设置为中文
+        
+    }else if ([language hasPrefix:@"ja"]){
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"ja" forKey:@"appLanguage"];//App语言设置为日文
+        
+    }else{//其他语言
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];//App语言设置为英文
+        
+    }
     return YES;
 }
 
